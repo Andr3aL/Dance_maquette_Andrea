@@ -9,21 +9,29 @@
 
 /* ********** Header ********** */
 
+body{
+    position: relative;
+}
+
 header {
     background-image: url(../img/pointes.jpg);
     background-position: center;
     background-size: cover;
     height: 120vh;
+    position: relative;
+    
 }
 
 h1 {
     font-family: "Petit Formal Script", cursive;
     font-weight: 400;
-    font-style: normal;
+    font-style: italic;
     color: white;
     padding-left: 200px;
     font-size: 3rem;
 }
+
+
 
 h1 a {
     text-decoration: none;
@@ -97,6 +105,8 @@ nav ul li a:hover {
 .danceWithUs h2 {
     font-family: "Petit Formal Script", cursive;
     font-size: 3rem;
+    font-style: italic;
+    text-shadow: 2px 2px 0px lightpink, 4px 4px 2px rgba(0, 0, 0, 0.3);
     text-decoration-color: lightpink;
     text-decoration: lightpink;
 }
@@ -116,6 +126,14 @@ nav ul li a:hover {
 #ourClasses div h3 {
     font-family: "Petit Formal Script";
     font-size: 3rem;
+    font-style: italic;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#ourClasses div p {
+    width: 90%;
+    margin: 0 auto;
 }
 
 #articles {
@@ -178,6 +196,7 @@ footer h5 {
     font-style: italic;
     font-family: "Petit Formal Script";
     padding-bottom: 50px;
+    text-shadow: 2px 2px 0px lightpink, 4px 4px 2px rgba(0, 0, 0, 0.3);
 }
 
 footer div {
@@ -196,4 +215,57 @@ footer div {
     color: white;
     background-color: black;
     height: 10vh;
+}
+
+/* media queries */
+
+@media screen and (max-width: 576px) {
+
+nav {
+    flex-direction: column;
+}    
+
+h1 {
+    padding: 0;
+}
+
+nav ul {
+    padding-right: 0;
+    padding-top: 30px;
+    width: 300px;
+}
+
+.danceWithUs {
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    width: 90%;
+    
+}
+
+.danceWithUs h2 {
+    width: 35%;
+}
+
+.danceWithUs p {
+    width: 30%;
+}
+
+#articles {
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+footer {
+    flex-direction: column;
+}
+
+#numero2, #numero22 {
+    display: none;
+}
+
+#numero1, #numero11 {
+    width: 100%;
+}
+
 }
