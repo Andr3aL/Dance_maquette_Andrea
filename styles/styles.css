@@ -19,7 +19,6 @@ header {
     background-size: cover;
     height: 120vh;
     position: relative;
-    
 }
 
 h1 {
@@ -30,8 +29,6 @@ h1 {
     padding-left: 200px;
     font-size: 3rem;
 }
-
-
 
 h1 a {
     text-decoration: none;
@@ -48,7 +45,7 @@ nav {
     align-items: center;
     position: sticky;
     z-index: 1;
-    top: 0;
+    top: 0px;
 }
 
 nav ul {
@@ -56,7 +53,7 @@ nav ul {
     padding-right: 200px;
     display: flex;
     justify-content: space-between;
-    width: 600px;
+    width: 850px;
 }
 
 nav ul li {
@@ -155,7 +152,6 @@ nav ul li a:hover {
     background-color: white;
 }
 
-
 #articles span {
     position: absolute;
     top: 20px;
@@ -171,7 +167,6 @@ nav ul li a:hover {
 }
 
 #articles div > p {
-    
     padding: 20px;
 }
 
@@ -192,6 +187,7 @@ footer p {
 }
 
 footer h5 {
+    width: 70%;
     font-size: 3rem;
     font-style: italic;
     font-family: "Petit Formal Script";
@@ -221,51 +217,63 @@ footer div {
 
 @media screen and (max-width: 576px) {
 
-nav {
-    flex-direction: column;
-}    
+    nav {
+        flex-direction: column;
+    }    
 
-h1 {
-    padding: 0;
+    h1 {
+        padding: 0;
+    }
+
+    nav ul {
+        padding-right: 0;
+        padding-top: 30px;
+        width: 300px;
+    }
+
+    .danceWithUs {
+        position: absolute;
+        top: 100px;
+        left: 15px;
+        width: 90%;
+        
+    }
+
+    .danceWithUs h2 {
+        width: 35%;
+    }
+
+    .danceWithUs p {
+        width: 30%;
+    }
+
+    #articles {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    #numero2, #numero22 {
+        display: none;
+    }
+
+    #numero1, #numero11 {
+        width: 100%;
+    }
+
 }
 
-nav ul {
-    padding-right: 0;
-    padding-top: 30px;
-    width: 300px;
-}
+@media screen and (min-width: 577px) and (max-width: 1020px) {
 
-.danceWithUs {
-    position: absolute;
-    top: 100px;
-    left: 15px;
-    width: 90%;
-    
-}
+    footer {
+        
+    }
 
-.danceWithUs h2 {
-    width: 35%;
-}
 
-.danceWithUs p {
-    width: 30%;
-}
 
-#articles {
-    flex-direction: column;
-    padding-bottom: 30px;
-}
 
-footer {
-    flex-direction: column;
-}
-
-#numero2, #numero22 {
-    display: none;
-}
-
-#numero1, #numero11 {
-    width: 100%;
-}
 
 }
